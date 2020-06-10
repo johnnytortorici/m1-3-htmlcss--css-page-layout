@@ -1,7 +1,41 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .mobile-nav-button img {
   width: 18px;
+  margin: 5px 10px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.desktop-nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.desktop-nav > ul li {
+  margin: 0 30px;
+}
+
+@media (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin-right: 30px;
+  }
 }
