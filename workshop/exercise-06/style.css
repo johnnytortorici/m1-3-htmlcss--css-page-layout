@@ -1,13 +1,41 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .nav {
   background-color: #383737;
+  font-size: 1.2em;
 }
 
 .nav-dropdown {
   color: #fff;
+  padding: 30px;
   text-decoration: none;
   display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown:hover > .nav-dropdown-items {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.nav-dropdown-items {
+  display: none;
+}
+
+.menu-item {
+  background-color: deepskyblue;
+  color: white;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 30px;
+}
+
+.menu-item:hover {
+  background-color: dodgerblue;
 }
